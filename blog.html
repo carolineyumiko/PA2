@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | KAYA - Cosmética Natural</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: url("images/fondo.jpg") no-repeat center center fixed;
+      background-size: cover;
+      background-color: #fce4ec;
+    }
+
+    /* CABECERA FIJA */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      text-align: center;
+      padding: 20px 0 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 70px;
+      color: #a35c4a;
+      margin: 0 0 10px 0;
+    }
+
+    .descripcion {
+      font-size: 18px;
+      color: #4a4a4a;
+      margin-bottom: 15px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-weight: 600;
+      margin: 0 18px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .menu a i {
+      margin-right: 8px;
+      color: #6aa66d;
+    }
+
+    .menu a:hover {
+      color: #6aa66d;
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .contenedor-blog {
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 220px auto 50px;
+      padding: 40px 60px;
+      border-radius: 20px;
+      max-width: 1000px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Imagen central */
+    .imagen-central {
+      width: 60%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: 40px 0 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Texto */
+    .texto {
+      font-size: 18px;
+      color: #4a4a4a;
+      width: 80%;
+      max-width: 800px;
+      margin: auto;
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    /* Redes sociales */
+    .social-blog {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .social-blog p {
+      width: 100%;
+      font-weight: 600;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .social-blog img {
+      width: 35px;
+      height: 35px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social-blog img:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+
+    @media (max-width: 700px) {
+      header h1 { font-size: 46px; }
+      .contenedor-blog { padding: 30px; margin-top: 180px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>KAYA</h1>
+    <p class="descripcion">Blog de cosmética natural, tips y bienestar</p>
+
+    <nav class="menu">
+      <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+      <a href="blog.html"><i class="fas fa-pen"></i>Blog</a>
+      <a href="galeria.html"><i class="fas fa-images"></i>Galería</a>
+      <a href="videos.html"><i class="fas fa-video"></i>Videos</a>
+    </nav>
+  </header>
+
+  <div class="contenedor-blog">
+    <main>
+      <img src="images/mujer.jpg" alt="Mujer cuidando su piel" class="imagen-central">
+
+      <div class="texto">
+        <p>
+          En <strong>KAYA</strong> creemos en el poder de la naturaleza para transformar la piel.
+          Cada producto es elaborado con ingredientes naturales, libres de químicos agresivos
+          y respetuosos con el medio ambiente. 🌿<br><br>
+          Nuestra misión es promover una rutina consciente, que cuide tanto tu piel como el planeta.
+          En este blog encontrarás consejos de belleza natural, recetas caseras y datos sobre
+          el cuidado de la piel con plantas, aceites y extractos botánicos.
+        </p>
+      </div>
+
+      <div class="social-blog">
+        <p>Síguenos en nuestras redes sociales</p>
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="https://www.tiktok.com/" target="_blank"><img src="images/tiktok.png" alt="TikTok"></a>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

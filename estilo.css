@@ -1,0 +1,76 @@
+/* === ESTILO PRINCIPAL KAYA === */
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background: url("images/fondo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #fce4ec;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTENEDOR CENTRAL */
+.contenedor {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 50px 70px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  color: #a35c4a; /* tono cálido que resalta con el fondo rosado */
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* DESCRIPCIÓN BAJO EL TÍTULO */
+.descripcion {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #4a4a4a;
+  margin: 15px 0 40px;
+  font-weight: 400;
+}
+
+/* MENÚ PRINCIPAL */
+.menu {
+  margin-bottom: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+  margin: 0 18px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #6aa66d; /* verde natural */
+}
+
+/* REDES SOCIALES */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social img:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
