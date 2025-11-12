@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros | KAYA - Cosmética Natural</title>
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: url("images/fondo.jpg") no-repeat center center fixed;
+      background-size: cover;
+      background-color: #fce4ec;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      text-align: center;
+      padding: 20px 0 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 70px;
+      color: #a35c4a;
+      margin: 0 0 10px 0;
+    }
+
+    .descripcion {
+      font-size: 18px;
+      color: #4a4a4a;
+      margin-bottom: 15px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-weight: 600;
+      margin: 0 18px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .menu a i {
+      margin-right: 8px;
+      color: #6aa66d;
+    }
+
+    .menu a:hover {
+      color: #6aa66d;
+    }
+
+    /* CONTENEDOR PRINCIPAL */
+    .contenedor-blog {
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 220px auto 50px;
+      padding: 40px 60px;
+      border-radius: 20px;
+      max-width: 1100px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* GRID PRINCIPAL */
+    .grid-nosotros {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "texto texto texto imagen"
+        "caroline alanna alanna imagen";
+      gap: 30px;
+      align-items: start;
+      justify-items: center;
+    }
+
+    .texto-nosotros { grid-area: texto; }
+    .card-caroline { grid-area: caroline; }
+    .card-alanna { grid-area: alanna; }
+    .imagen-vertical { grid-area: imagen; }
+
+    /* TEXTO PRINCIPAL */
+    .texto {
+      font-size: 18px;
+      color: #4a4a4a;
+      text-align: justify;
+      line-height: 1.6;
+      background-color: rgba(255,255,255,0.7);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    /* TARJETAS DEL EQUIPO */
+    .card-equipo {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, filter 0.3s ease;
+      background-color: #fff;
+      text-align: center;
+      padding-bottom: 15px;
+      max-width: 100%;
+    }
+
+    .card-equipo img {
+      width: 100%;
+      height: 300px; /* altura fija igual para todas */
+      object-fit: cover; /* mantiene proporción */
+      display: block;
+    }
+
+    .card-equipo h4 {
+      margin: 10px 0 5px 0;
+      color: #6a4b42;
+      font-size: 18px;
+    }
+
+    .card-equipo p {
+      margin: 0 0 10px 0;
+      color: #4a4a4a;
+      font-size: 16px;
+    }
+
+    .card-equipo:hover {
+      transform: translateY(-5px) scale(1.02);
+      filter: brightness(1.05);
+    }
+
+    /* IMAGEN VERTICAL */
+    .imagen-vertical img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    /* REDES SOCIALES */
+    .social-blog {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .social-blog p {
+      width: 100%;
+      font-weight: 600;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .social-blog img {
+      width: 35px;
+      height: 35px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social-blog img:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+
+    /* PIE DE PÁGINA */
+    footer {
+      margin-top: 40px;
+      background-color: #a35c4a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      border-radius: 0 0 12px 12px;
+    }
+
+    /* RESPONSIVO */
+    @media (max-width: 900px) {
+      .grid-nosotros {
+        grid-template-areas:
+          "texto"
+          "caroline"
+          "alanna"
+          "imagen";
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>KAYA</h1>
+    <p class="descripcion">Nosotros — Cosmética natural, tips y bienestar</p>
+
+    <nav class="menu">
+      <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+      <a href="blog.html"><i class="fas fa-pen"></i>Blog</a>
+      <a href="galeria.html"><i class="fas fa-images"></i>Galería</a>
+      <a href="videos.html"><i class="fas fa-video"></i>Videos</a>
+      <a href="nosotros.html"><i class="fas fa-leaf"></i>Nosotros</a>
+      <a href="contactos.html"><i class="fas fa-envelope"></i>Contacto</a>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="contenedor-blog">
+    <main class="grid-nosotros">
+
+      <!-- TEXTO PRINCIPAL -->
+      <div class="texto texto-nosotros">
+        <p>
+          <strong>KAYA</strong> nace como un proyecto dedicado a la cosmética natural, con la misión de ofrecer productos amigables con la piel y el medio ambiente. 
+          Caroline, nuestra fundadora, y Alanna, nuestra inspiración, lideran esta comunidad apasionada por el bienestar y el cuidado consciente. 
+          Aquí compartimos recetas, consejos de belleza natural y productos pensados para toda la familia.
+        </p>
+      </div>
+
+      <!-- TARJETAS DEL EQUIPO -->
+      <div class="card-equipo card-caroline">
+        <img src="images/caroline.jpg" alt="Caroline - Fundadora">
+        <h4>Caroline</h4>
+        <p>Fundadora</p>
+      </div>
+
+      <div class="card-equipo card-alanna">
+        <img src="images/alanna.jpg" alt="Alanna - Inspiración">
+        <h4>Alanna</h4>
+        <p>Inspiración</p>
+      </div>
+
+      <!-- IMAGEN VERTICAL -->
+      <div class="imagen-vertical">
+        <img src="images/vertical.jpg" alt="Imagen vertical decorativa">
+      </div>
+
+    </main>
+
+    <!-- REDES SOCIALES -->
+    <div class="social-blog">
+      <p>Síguenos en nuestras redes sociales</p>
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://www.tiktok.com/" target="_blank"><img src="images/tiktok.png" alt="TikTok"></a>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      © 2024 KAYA - Cosmética Natural. Todos los derechos reservados.
+    </footer>
+
+  </div>
+
+</body>
+</html>
+
+ 
+   
