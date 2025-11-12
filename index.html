@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KAYA - Cosmética Natural</title>
-<!-- FAVICON: PNG -->
+  <!-- FAVICON: PNG -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
@@ -15,6 +15,73 @@
 
   <!-- Fuente elegante tipo caligráfica -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: url("images/fondo.jpg") no-repeat center top;
+      background-size: cover;
+      background-color: #fce4ec;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 80px;
+      color: #a35c4a;
+      margin: 50px 0 10px 0;
+    }
+
+    .descripcion {
+      font-size: 20px;
+      color: #4a4a4a;
+      margin-bottom: 40px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #3a3a3a;
+      font-weight: 600;
+      margin: 0 18px;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .menu a i {
+      margin-right: 8px;
+      color: #6aa66d;
+    }
+
+    .menu a:hover {
+      color: #6aa66d;
+    }
+
+    .social {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .social img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .social img:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 46px; }
+      .menu a { display: block; margin: 10px 0; }
+    }
+  </style>
 </head>
 <body>
 
@@ -23,15 +90,14 @@
     <h1>KAYA</h1>
     <p class="descripcion">Cosmética natural para cuidar tu piel con amor y conciencia</p>
 
-    <!-- MENÚ PRINCIPAL -->
+    <!-- MENÚ PRINCIPAL CON ICONOS -->
     <nav class="menu">
-     <a href="index.html">Inicio</a>
-<a href="blog.html">Blog</a>
-<a href="galeria.html">Galería</a>
-<a href="videos.html">Videos</a>
-<a href="nosotros.html">Nosotros</a>
-<a href="contactos.html">Contacto</a>
-
+      <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+      <a href="blog.html"><i class="fas fa-pen"></i>Blog</a>
+      <a href="galeria.html"><i class="fas fa-images"></i>Galería</a>
+      <a href="videos.html"><i class="fas fa-video"></i>Videos</a>
+      <a href="nosotros.html"><i class="fas fa-leaf"></i>Nosotros</a>
+      <a href="contactos.html"><i class="fas fa-envelope"></i>Contacto</a>
     </nav>
 
     <!-- REDES SOCIALES -->

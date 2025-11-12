@@ -4,10 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Galería | KAYA - Cosmética Natural</title>
-<!-- FAVICON: PNG -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -19,12 +17,11 @@
     body {
       margin: 0;
       font-family: 'Playfair Display', serif;
-      background: url("images/fondo.jpg") no-repeat center center fixed;
+      background: url("images/fondo.jpg") no-repeat center top;
       background-size: cover;
       background-color: #fce4ec;
     }
 
-    /* CABECERA FIJA */
     header {
       position: fixed;
       top: 0;
@@ -68,7 +65,6 @@
       color: #6aa66d;
     }
 
-    /* CONTENEDOR PRINCIPAL */
     .contenedor-galeria {
       background-color: rgba(255, 255, 255, 0.8);
       margin: 220px auto 50px;
@@ -84,7 +80,6 @@
       margin-bottom: 30px;
     }
 
-    /* Galería */
     .galeria {
       display: flex;
       flex-wrap: wrap;
@@ -121,13 +116,11 @@
       transform: scale(1.03);
     }
 
-    /* Redes sociales */
     .social-galeria {
       margin-top: 40px;
       display: flex;
       justify-content: center;
       gap: 20px;
-      align-items: center;
       flex-wrap: wrap;
     }
 
@@ -159,21 +152,22 @@
 </head>
 
 <body>
-
+  <!-- HEADER -->
   <header>
     <h1>KAYA</h1>
     <p class="descripcion">Galería de cosmética natural, tips y bienestar</p>
 
     <nav class="menu">
-  <a href="index.html">Inicio</a>
-  <a href="blog.html">Blog</a>
-  <a href="galeria.html">Galería</a>
-  <a href="videos.html">Videos</a>
-  <a href="nosotros.html">Nosotros</a>
-  <a href="contactos.html">Contacto</a>
-</nav>
+      <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+      <a href="blog.html"><i class="fas fa-pen"></i>Blog</a>
+      <a href="galeria.html"><i class="fas fa-images"></i>Galería</a>
+      <a href="videos.html"><i class="fas fa-video"></i>Videos</a>
+      <a href="nosotros.html"><i class="fas fa-leaf"></i>Nosotros</a>
+      <a href="contactos.html"><i class="fas fa-envelope"></i>Contacto</a>
+    </nav>
   </header>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <div class="contenedor-galeria">
     <main>
       <h2>Nuestra Galería Natural</h2>
@@ -196,6 +190,5 @@
       </div>
     </main>
   </div>
-
 </body>
 </html>
